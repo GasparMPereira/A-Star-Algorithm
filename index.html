@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo A*</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Representação do Algoritmo A*</h1>
+    </header>
+    <main>
+        <section class="controls">
+            <label for="nodeCount">Número de nós: </label>
+            <input type="number" id="nodeCount" min="2" max="5000" value="10">
+            <label for="speed">Velocidade de procura (ms): </label>
+            <input type="number" id="speed" min="100" max="2000" value="500">
+            <button id="startButton">Iniciar A*</button>
+        </section>
+        <section id="result" class="result">
+            <h2>Resultado</h2>
+            <p id="path"></p>
+        </section>
+        <section class="canvas-container">
+            <canvas id="graphCanvas" width="800" height="500"></canvas>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
